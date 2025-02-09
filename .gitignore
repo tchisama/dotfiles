@@ -1,0 +1,70 @@
+# Ignore system-specific and cache files
+*.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Ignore application caches and lock files
+**/cache/
+**/lock/
+**/logs/
+**/tmp/
+
+# Ignore systemd runtime files
+systemd/**
+
+# Ignore user-specific application data
+pulse/**
+libreoffice/**
+matplotlib/**
+
+# Ignore browser-specific configs
+chromium/**
+google-chrome-for-testing/**
+
+# Ignore package manager caches and temp files
+yay/**
+
+# Ignore Copilot settings
+github-copilot/**
+
+# Ignore Node.js dependencies
+nextjs-nodejs/node_modules/
+create-next-app-nodejs/node_modules/
+
+# Ignore VSCode settings (if applicable)
+.vscode/
+
+# Ignore compiled files (if any exist)
+*.o
+*.a
+*.so
+*.out
+
+# Ignore build directories
+build/
+dist/
+
+# Ignore 
+create-next-app-nodejs
+google-chrome-for-testing
+systemd
+blender
+dconf
+gtk-3.0
+libreoffice
+yay
+chromium
+matplotlib
+configstore
+go
+nextjs-nodejs
+pulse
+nvim-pack
+
