@@ -1,17 +1,17 @@
 return {
 	{
 		"folke/tokyonight.nvim",
-		priority = 100000, -- make sure to load this before all the other start plugins
+		priority = 100000, -- Ensure this loads before other plugins
 		config = function()
-			local bg = "#011628"
-			local bg_dark = "#011423"
-			local bg_highlight = "#143652"
-			local bg_search = "#0A64AC"
-			local bg_visual = "#275378"
-			local fg = "#CBE0F0"
-			local fg_dark = "#B4D0E9"
-			local fg_gutter = "#627E97"
-			local border = "#547998"
+			local bg = "#0D1117" -- GitHub Dark background
+			local bg_dark = "#161B22"
+			local bg_highlight = "#21262D"
+			local bg_search = "#2F81F7"
+			local bg_visual = "#264F78"
+			local fg = "#C9D1D9" -- GitHub Dark foreground
+			local fg_dark = "#B1BAC4"
+			local fg_gutter = "#484F58"
+			local border = "#30363D"
 
 			require("tokyonight").setup({
 				style = "night",
@@ -33,7 +33,7 @@ return {
 					colors.fg_sidebar = fg_dark
 				end,
 			})
-			-- load the colorscheme here
+			-- Load the colorscheme
 			vim.cmd([[colorscheme tokyonight]])
 		end,
 	},
