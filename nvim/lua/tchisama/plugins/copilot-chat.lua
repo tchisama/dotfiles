@@ -1,6 +1,8 @@
 return {
 	{
 		"CopilotC-Nvim/CopilotChat.nvim",
+		-- specify the branch to use
+		branch = "main",
 		dependencies = {
 			{ "github/copilot.vim" }, -- or zbirenbaum/copilot.lua
 			{ "nvim-lua/plenary.nvim" }, -- required for async operations
