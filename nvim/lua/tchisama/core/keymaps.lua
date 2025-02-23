@@ -31,3 +31,11 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
+-- Keybindings for CopilotChat
+keymap.set("n", "<leader>cc", ":CopilotChatToggle<CR>", { noremap = true, silent = true, desc = "Toggle chat window" }) -- Toggle chat window
+keymap.set("n", "<leader>ce", ":CopilotChatExplain<CR>", { noremap = true, silent = true }) -- Explain selected code
+keymap.set("n", "<leader>cr", ":CopilotChatReview<CR>", { noremap = true, silent = true }) -- Review selected code
+keymap.set("n", "<leader>cf", ":CopilotChatFix<CR>", { noremap = true, silent = true }) -- Fix selected code
+keymap.set("n", "<leader>co", ":CopilotChatOptimize<CR>", { noremap = true, silent = true }) -- Optimize selected code
+keymap.set("n", "<leader>cd", ":CopilotChatDocs<CR>", { noremap = true, silent = true }) -- Generate docs for selected code
+keymap.set("n", "<leader>ct", ":CopilotChatTests<CR>", { noremap = true, silent = true }) -- Generate tests for selected code
