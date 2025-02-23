@@ -86,11 +86,11 @@ cpu_temperature 0 {
 }
 
 
-#cpu_temperature 0 {
- #       format = "  %degrees °C "
-  #      max_threshold = 42
-   #     path = "/sys/devices/platform/coretemp.0/hwmon/hwmon0/temp1_input"
-#}
+# cpu_temperature 0 {
+#        format = "  %degrees °C "
+#        max_threshold = 42
+#        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon0/temp1_input"
+# }
 
 cpu_usage {
         format = "  %usage "

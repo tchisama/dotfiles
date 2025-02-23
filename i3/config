@@ -5,8 +5,15 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+# Remove title bars
+for_window [class="^.*"] border pixel 2
 
 
+# set background image 
+exec --no-startup-id feh --bg-fill ~/wall/relax.png
+
+# picom auto start
+exec_always --no-startup-id picom
 
 # Define workspace names
 set $ws1 "1:   Coding"
@@ -39,12 +46,6 @@ bindsym $mod+Shift+5 move container to workspace $ws5
 
 
 
-# set background image 
-exec --no-startup-id feh --bg-fill ~/wall/relax.png
-
-# exec picom 
-exec --no-startup-id picom --experimental-backends
-exec --no-startup-id picom --config ~/.config/picom/picom.conf
 
 
 
@@ -58,7 +59,7 @@ font pango:monospace 8
 
 
 # add gaps between windows
-gaps inner 0
+gaps inner 10
 gaps outer 0
 
 
