@@ -10,7 +10,7 @@ for_window [class="^.*"] border pixel 2
 
 
 # set background image 
-exec --no-startup-id feh --bg-fill ~/wall/relax.png
+exec --no-startup-id feh --bg-fill ~/wall/fantasy-style-scene.jpg
 
 # picom auto start
 exec_always --no-startup-id picom
