@@ -39,3 +39,11 @@ keymap.set("n", "<leader>cf", ":CopilotChatFix<CR>", { noremap = true, silent = 
 keymap.set("n", "<leader>co", ":CopilotChatOptimize<CR>", { noremap = true, silent = true }) -- Optimize selected code
 keymap.set("n", "<leader>cd", ":CopilotChatDocs<CR>", { noremap = true, silent = true }) -- Generate docs for selected code
 keymap.set("n", "<leader>ct", ":CopilotChatTests<CR>", { noremap = true, silent = true }) -- Generate tests for selected code
+
+-- ChatGpt keybindings
+--
+-- :ChatGPT
+-- :ChatGPTActAs
+-- :ChatGPTCompleteCode
+--
+keymap.set("n", "<leader>cg", ":ChatGPT<CR>", { noremap = true, silent = true, desc = "Open Chat with Chatgpt" }) -- Generate code using ChatGpt
