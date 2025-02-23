@@ -1,5 +1,5 @@
 return {
-	"folke/todo-comments.nvim",
+	"tchiama/todo-comments.nvim",
 	event = { "BufReadPre", "BufNewFile" },
 	dependencies = { "nvim-lua/plenary.nvim" },
 	config = function()
@@ -19,3 +19,12 @@ return {
 		todo_comments.setup()
 	end,
 }
+-- DOCS:
+
+-- TODO:
+--
+-- FIXME:
+--
+-- HACK:
+--
+-- XXX:
