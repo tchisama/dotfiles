@@ -4,10 +4,11 @@
 declare -A CONFIG_MAP=(
   ["nvim"]="$HOME/.config/nvim"
   [".tmux.conf"]="$HOME/.tmux.conf"
-  # Add more mappings here as needed
-  # Example:
-  # ["i3"]="$HOME/.config/i3"
-  # [".bashrc"]="$HOME/.bashrc"
+  ["alacritty"]="$HOME/.config/alacritty"
+  ["i3"]="$HOME/.config/i3"
+  ["i3status"]="$HOME/.config/i3status"
+  ["picom"]="$HOME/.config/picom"
+  ["wall"]="$HOME/wall"
 )
 
 # Variables

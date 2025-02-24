@@ -8,6 +8,6 @@ font:
   italic:
     family: "Hack Nerd Font"
     style: Italic
-  size: 10.0
+  size: 18.0
 
 background_opacity: 0.4
