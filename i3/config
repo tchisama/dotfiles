@@ -161,11 +161,14 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# Mod+Enter for horizontal split (left/right)
-bindsym $mod+Return split h
 
-# Mod+Shift+Enter for vertical split (top/bottom)
-bindsym $mod+Shift+Return split v
+
+# vertical and horizontal split in stack mode
+bindsym $mod+v split vertical
+bindsym $mod+h split horizontal
+
+
+  
 
 
 # Define names for default workspaces for which we configure key bindings later on.
