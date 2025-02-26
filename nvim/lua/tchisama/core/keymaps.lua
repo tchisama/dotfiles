@@ -40,3 +40,25 @@ keymap.set("n", "<leader>ct", ":CopilotChatTests<CR>", { noremap = true, silent 
 
 -- ChatGpt keybindings
 keymap.set("n", "<leader>cg", ":ChatGPT<CR>", { noremap = true, silent = true, desc = "Open Chat with Chatgpt" }) -- Generate code using ChatGpt
+
+--
+-- :PomodoroStart 	Start the Pomodoro timer.
+-- :PomodoroStop 	Stop the Pomodoro timer.
+-- :PomodoroUI 	Display the Pomodoro UI.
+-- :PomodoroSkipBreak 	Skip the current break and start the next work session.
+-- :PomodoroForceBreak 	Forcefully start a break.
+-- :PomodoroDelayBreak Delay the current break by 5 minutes.
+
+keymap.set("n", "<leader>pt", ":PomodoroStart<CR>", { desc = "Start Pomodoro timer" })
+keymap.set("n", "<leader>ps", ":PomodoroStop<CR>", { desc = "Stop Pomodoro timer" })
+keymap.set("n", "<leader>pu", ":PomodoroUI<CR>", { desc = "Display Pomodoro UI" })
+
+-- Code Runner
+
+keymap.set("n", "<leader>rr", ":RunCode<CR>", { noremap = true, silent = false })
+keymap.set("n", "<leader>rf", ":RunFile<CR>", { noremap = true, silent = false })
+keymap.set("n", "<leader>rft", ":RunFile tab<CR>", { noremap = true, silent = false })
+keymap.set("n", "<leader>rp", ":RunProject<CR>", { noremap = true, silent = false })
+keymap.set("n", "<leader>rc", ":RunClose<CR>", { noremap = true, silent = false })
+keymap.set("n", "<leader>crf", ":CRFiletype<CR>", { noremap = true, silent = false })
+keymap.set("n", "<leader>crp", ":CRProjects<CR>", { noremap = true, silent = false })
