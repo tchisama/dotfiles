@@ -195,6 +195,8 @@ return {
 		-- Set menu
 		dashboard.section.buttons.val = {
 			dashboard.button("SPC ee", "  > Toggle file explorer", "<cmd>NvimTreeToggle<CR>"),
+			-- open wiki , by opening the ~/wiki/home.md
+			dashboard.button("SPC w", "  > Open Wiki", "<cmd>edit ~/wiki/home.md<CR>"),
 			dashboard.button("q", " > Quit NVIM", "<cmd>qa<CR>"),
 		}
 
