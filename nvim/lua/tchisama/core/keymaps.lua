@@ -71,10 +71,26 @@ keymap.set("n", "<leader>z", "za", { desc = "Toggle fold" }) -- toggle fold
 --- custom commands
 keymap.set(
 	"n",
-	"<leader>ct",
-	require("tchisama.core.custome_commands.toggle_todo").toggle_todo,
+	"<leader>qs",
+	require("tchisama.core.custome_commands.wiki").toggle_todo,
 	{ noremap = true, silent = true, desc = "Toggle TODO" }
 )
+keymap.set(
+	"n",
+	"<leader>qt",
+	require("tchisama.core.custome_commands.wiki").todo_temp,
+	{ noremap = true, silent = true, desc = "Insert TODO template" }
+)
+keymap.set(
+	"n",
+	"<leader>qi",
+	require("tchisama.core.custome_commands.wiki").insert_todo,
+	{ noremap = true, silent = true, desc = "Insert TODO" }
+)
+keymap.set("n", "<leader>qf", function()
+	local tag = vim.fn.input("Enter tag: ")
+	require("tchisama.core.custome_commands.wiki").filter_todos_by_tag(tag)
+end, { noremap = true, silent = true, desc = "Filter TODOs by tag" })
 
 --- Telescope keybindings
 ---
