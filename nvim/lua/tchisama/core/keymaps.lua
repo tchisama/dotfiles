@@ -8,6 +8,7 @@ local keymap = vim.keymap -- for conciseness
 
 -- use jk to exit insert mode or caps lock
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
+keymap.set("v", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
@@ -62,3 +63,104 @@ keymap.set("n", "<leader>rp", ":RunProject<CR>", { noremap = true, silent = fals
 keymap.set("n", "<leader>rc", ":RunClose<CR>", { noremap = true, silent = false })
 keymap.set("n", "<leader>crf", ":CRFiletype<CR>", { noremap = true, silent = false })
 keymap.set("n", "<leader>crp", ":CRProjects<CR>", { noremap = true, silent = false })
+
+--- VIM folds keybindings
+
+keymap.set("n", "<leader>z", "za", { desc = "Toggle fold" }) -- toggle fold
+
+--- custom commands
+keymap.set(
+	"n",
+	"<leader>ct",
+	require("tchisama.core.custome_commands.toggle_todo").toggle_todo,
+	{ noremap = true, silent = true, desc = "Toggle TODO" }
+)
+
+--- Telescope keybindings
+---
+keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { noremap = true, silent = true, desc = "Find files" })
+keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", { noremap = true, silent = true, desc = "Live grep" })
+keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>", { noremap = true, silent = true, desc = "Buffers" })
+keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>", { noremap = true, silent = true, desc = "Help tags" })
+keymap.set("n", "<leader>fw", "<cmd>Telescope grep_string<CR>", { noremap = true, silent = true, desc = "Grep string" })
+keymap.set("n", "<leader>fc", "<cmd>Telescope commands<CR>", { noremap = true, silent = true, desc = "Commands" })
+keymap.set("n", "<leader>fm", "<cmd>Telescope marks<CR>", { noremap = true, silent = true, desc = "Marks" })
+-- colorcheme with preview and set it when selected as default always
+keymap.set(
+	"n",
+	"<leader>cs",
+	"<cmd>lua require('telescope.builtin').colorscheme({enable_preview = true, disable_devicons = true, theme = 'cursor'})<CR>",
+	{ noremap = true, silent = true, desc = "Color schemes" }
+)
+
+keymap.set(
+	"n",
+	"<leader>fl",
+	"<cmd>Telescope lsp_document_symbols<CR>",
+	{ noremap = true, silent = true, desc = "Document symbols" }
+)
+
+keymap.set("n", "<leader>ft", "<cmd>Telescope treesitter<CR>", { noremap = true, silent = true, desc = "Treesitter" })
+
+-- Telescope with git
+
+keymap.set("n", "<leader>fgs", "<cmd>Telescope git_status<CR>", { noremap = true, silent = true, desc = "Git status" })
+keymap.set(
+	"n",
+	"<leader>fgb",
+	"<cmd>Telescope git_branches<CR>",
+	{ noremap = true, silent = true, desc = "Git branches" }
+)
+keymap.set(
+	"n",
+	"<leader>fgc",
+	"<cmd>Telescope git_commits<CR>",
+	{ noremap = true, silent = true, desc = "Git commits" }
+)
+keymap.set("n", "<leader>fgf", "<cmd>Telescope git_files<CR>", { noremap = true, silent = true, desc = "Git files" })
+
+keymap.set(
+	"n",
+	"<leader>fvo",
+	"<cmd>Telescope vim_options<CR>",
+	{ noremap = true, silent = true, desc = "Vim options" }
+)
+
+--- jumb between buffers
+
+keymap.set(
+	"n",
+	"<leader>0",
+	"<cmd>BufferLineGoToBuffer 1<CR>",
+	{ noremap = true, silent = true, desc = "Go to buffer 1" }
+)
+keymap.set(
+	"n",
+	"<leader>1",
+	"<cmd>BufferLineGoToBuffer 2<CR>",
+	{ noremap = true, silent = true, desc = "Go to buffer 2" }
+)
+keymap.set(
+	"n",
+	"<leader>2",
+	"<cmd>BufferLineGoToBuffer 3<CR>",
+	{ noremap = true, silent = true, desc = "Go to buffer 3" }
+)
+keymap.set(
+	"n",
+	"<leader>3",
+	"<cmd>BufferLineGoToBuffer 4<CR>",
+	{ noremap = true, silent = true, desc = "Go to buffer 4" }
+)
+keymap.set(
+	"n",
+	"<leader>4",
+	"<cmd>BufferLineGoToBuffer 5<CR>",
+	{ noremap = true, silent = true, desc = "Go to buffer 5" }
+)
+keymap.set(
+	"n",
+	"<leader>5",
+	"<cmd>BufferLineGoToBuffer 6<CR>",
+	{ noremap = true, silent = true, desc = "Go to buffer 6" }
+)
