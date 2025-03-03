@@ -183,3 +183,16 @@ keymap.set(
 --- GOYO keybindings
 ---
 keymap.set("n", "<leader>g", ":Goyo<CR>", { noremap = true, silent = true, desc = "Goyo" })
+
+--- Vim Markdown Runner
+---
+-- autocmd FileType markdown nnoremap <buffer> <Leader>r :MarkdownRunner<CR>
+-- autocmd FileType markdown nnoremap <buffer> <Leader>R :MarkdownRunnerInsert<CR>
+
+keymap.set("n", "<leader>qr", ":MarkdownRunner<CR>", { noremap = true, silent = true, desc = "Run markdown" })
+keymap.set(
+	"n",
+	"<leader>qR",
+	":MarkdownRunnerInsert<CR>",
+	{ noremap = true, silent = true, desc = "Run markdown and insert" }
+)
