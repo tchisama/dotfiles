@@ -19,7 +19,7 @@ exec_always --no-startup-id picom
 set $ws1 "1:   Coding"
 set $ws2 "2:   Browsing"
 set $ws3 "3:   Communication"
-set $ws4 "4:   Media"
+set $ws4 "4:   Learning"
 set $ws5 "5:   Design"
 
 

@@ -22,6 +22,10 @@ alias vi='nvim'
 alias v='nvim'
 
 
+
+alias x='xargs'
+
+
 # fzf
 alias f='fzf'
 alias ff='fzf --preview "bat --color=always --style=header,grid --line-range :500 {}"' # preview first 500 lines
