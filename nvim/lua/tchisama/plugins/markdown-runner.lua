@@ -6,6 +6,7 @@ return {
 			rust = "sh -c 'cat > /tmp/tmp_rust.rs && rustc /tmp/tmp_rust.rs -o /tmp/tmp_rust && /tmp/tmp_rust'",
 			vim = "vim -es -c 'source %' -c 'q'", -- Runs Vimscript
 			html = "xdg-open %",
+			javascript = "node",
 		}
 	end,
 }
