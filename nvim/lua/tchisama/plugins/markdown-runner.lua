@@ -5,8 +5,8 @@ return {
 			python = "python3",
 			rust = "sh -c 'cat > /tmp/tmp_rust.rs && rustc /tmp/tmp_rust.rs -o /tmp/tmp_rust && /tmp/tmp_rust'",
 			vim = "vim -es -c 'source %' -c 'q'", -- Runs Vimscript
-			html = "xdg-open %",
 			javascript = "node",
+			typescript = "ts-node", --- install it with npm install -g ts-node
 		}
 	end,
 }

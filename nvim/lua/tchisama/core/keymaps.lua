@@ -9,6 +9,17 @@ local keymap = vim.keymap -- for conciseness
 -- use jk to exit insert mode or caps lock
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
+--- use leader j and leader k to {  and }
+
+keymap.set("n", "<leader>j", "}", { desc = "Move to next paragraph" })
+keymap.set("n", "<leader>k", "{", { desc = "Move to previous paragraph" })
+keymap.set("v", "<leader>j", "}", { desc = "Move to next paragraph" })
+keymap.set("v", "<leader>k", "{", { desc = "Move to previous paragraph" })
+
+--- use double leader as zz
+
+keymap.set("n", "<leader><leader>", "zz", { desc = "Center cursor" })
+
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 --
@@ -196,3 +207,6 @@ keymap.set(
 	":MarkdownRunnerInsert<CR>",
 	{ noremap = true, silent = true, desc = "Run markdown and insert" }
 )
+--- Vim Rest Console
+---
+keymap.set("n", "<leader>rc", ":RestConsole<CR>", { noremap = true, silent = true, desc = "Rest console" })

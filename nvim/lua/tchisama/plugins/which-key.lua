@@ -6,8 +6,11 @@ return {
 		vim.o.timeoutlen = 500
 	end,
 	opts = {
-		-- your configuration comes here
-		-- or leave it empty to use the default settings
-		-- refer to the configuration section below
+		position = { "bottom", "right" }, -- Position the window at the bottom right
+		layout = {
+			align = "right", -- Align the items to the right
+			width = { min = 20, max = 50 }, -- Set minimum and maximum width
+			height = { min = 5, max = 10 }, -- Set minimum and maximum height
+		},
 	},
 }
