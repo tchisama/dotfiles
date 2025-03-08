@@ -210,3 +210,12 @@ keymap.set(
 --- Vim Rest Console
 ---
 keymap.set("n", "<leader>rc", ":RestConsole<CR>", { noremap = true, silent = true, desc = "Rest console" })
+
+--- From Object to Type definition "typescript"
+---
+keymap.set(
+	"n",
+	"<leader>tt",
+	":.,$!make_types -i /dev/stdout /dev/stdin Banana<CR>",
+	{ noremap = true, silent = true, desc = "Make types" }
+)
