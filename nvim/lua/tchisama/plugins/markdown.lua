@@ -11,7 +11,6 @@ return {
 			heading = {
 				sign = true,
 				position = "inline",
-				border = true,
 			},
 			pipe_table = { preset = "round" },
 			sign = {

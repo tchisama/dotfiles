@@ -56,13 +56,12 @@ set $mod Mod4
 # is used in the bar {} block below.
 # fonts/HackNerdFont-Regular.ttf: Hack Nerd Font:style=Regular
 # t
+# font pango:Hack Nerd Font 10
 font pango:Hack Nerd Font 10
 
 
 
 # add gaps between windows
-gaps inner 10
-gaps outer 0
 
 
 
@@ -105,7 +104,7 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec alacritty  
 
 # kill focused window
 bindsym $mod+Shift+q kill

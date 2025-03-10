@@ -1,6 +1,9 @@
 require("tchisama.core")
 require("tchisama.lazy")
 
+vim.o.termguicolors = true
+vim.opt.guifont = "Hack Nerd Font:h12"
+
 -- local scheme_file = vim.fn.stdpath("config") .. "/colorscheme.txt"
 -- if vim.fn.filereadable(scheme_file) == 1 then
 -- 	local scheme = vim.fn.readfile(scheme_file)[1]

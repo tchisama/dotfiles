@@ -12,3 +12,92 @@ style = "Italic"
 [font.normal]
 family = "Hack Nerd Font"
 style = "Regular"
+
+
+
+
+
+# Nightfox Alacritty Colors
+## name: terafox
+## upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/terafox/alacritty.toml
+
+
+
+
+
+[colors.primary]
+background = "#0D1117"
+foreground = "#C9D1D9"
+dim_foreground = "#B1BAC4"
+bright_foreground = "#C9D1D9"
+
+[colors.cursor]
+text = "#0D1117"
+cursor = "#7AA46F"
+
+[colors.vi_mode_cursor]
+text = "#0D1117"
+cursor = "#7AA46F"
+
+[colors.search.matches]
+foreground = "#C9D1D9"
+background = "#3A5F4F"
+
+[colors.search.focused_match]
+foreground = "#C9D1D9"
+background = "#264F3A"
+
+[colors.footer_bar]
+foreground = "#C9D1D9"
+background = "#161B22"
+
+[colors.hints.start]
+foreground = "#C9D1D9"
+background = "#4B8B5C"
+
+[colors.hints.end]
+foreground = "#C9D1D9"
+background = "#161B22"
+
+[colors.selection]
+text = "#C9D1D9"
+background = "#1F332A"
+
+[colors.normal]
+black = "#161B22"
+red = "#E85C51"
+green = "#7AA46F"
+yellow = "#C9A26D"
+blue = "#3A5F4F"
+magenta = "#8A5C6C"
+cyan = "#5F8B74"
+white = "#C9D1D9"
+
+[colors.bright]
+black = "#30363D"
+red = "#EB746B"
+green = "#8EB27F"
+yellow = "#D6B176"
+blue = "#4B8B5C"
+magenta = "#A16C7D"
+cyan = "#6E9B86"
+white = "#E6EAEA"
+
+[colors.dim]
+black = "#0D1117"
+red = "#C54E45"
+green = "#688B6A"
+yellow = "#B5935C"
+blue = "#2F5440"
+magenta = "#7B545F"
+cyan = "#5B7C6A"
+white = "#B1BAC4"
+
+[[colors.indexed_colors]]
+index = 16
+color = "#8EB27F"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#9DAF89"
+

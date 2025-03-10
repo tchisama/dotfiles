@@ -102,6 +102,15 @@ keymap.set("n", "<leader>qf", function()
 	require("tchisama.core.custome_commands.wiki").filter_todos_by_tag(tag)
 end, { noremap = true, silent = true, desc = "Filter TODOs by tag" })
 
+--- Wiki Commands
+
+keymap.set("n", "<leader>ww", ":WikiIndex<CR>", { noremap = true, silent = true, desc = "Open wiki index" })
+keymap.set("n", "<leader>wt", ":WikiToc<CR>", { noremap = true, silent = true, desc = "Open wiki table of contents" })
+keymap.set("n", "<leader>wn", ":WikiNew<CR>", { noremap = true, silent = true, desc = "Create new wiki" })
+keymap.set("n", "<leader>wl", ":WikiLinks<CR>", { noremap = true, silent = true, desc = "Open wiki links" })
+keymap.set("n", "<leader>ws", ":WikiSearch<CR>", { noremap = true, silent = true, desc = "Search wiki" })
+keymap.set("n", "<leader>wp", ":WikiPages<CR>", { noremap = true, silent = true, desc = "Open wiki pages" })
+
 --- Telescope keybindings
 ---
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { noremap = true, silent = true, desc = "Find files" })
@@ -208,7 +217,6 @@ keymap.set(
 	{ noremap = true, silent = true, desc = "Run markdown and insert" }
 )
 --- Vim Rest Console
----
 keymap.set("n", "<leader>rc", ":RestConsole<CR>", { noremap = true, silent = true, desc = "Rest console" })
 
 --- From Object to Type definition "typescript"
