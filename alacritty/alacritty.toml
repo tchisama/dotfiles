@@ -26,7 +26,7 @@ style = "Regular"
 
 
 [colors.primary]
-background = "#0D1117"
+background = "#001219"
 foreground = "#C9D1D9"
 dim_foreground = "#B1BAC4"
 bright_foreground = "#C9D1D9"
