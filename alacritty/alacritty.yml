@@ -1,3 +1,6 @@
+import:
+  - ~/.alacritty-colorscheme/themes/gruvbox_material.yaml
+
 font:
   normal:
     family: "Hack Nerd Font"
