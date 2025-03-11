@@ -22,3 +22,30 @@ end
 vim.g.neovide_opacity = 0.0
 vim.g.transparency = 0.8
 vim.g.neovide_background_color = "#0f1117" .. alpha()
+
+-- Default options:
+require("gruvbox").setup({
+	terminal_colors = true, -- add neovim terminal colors
+	undercurl = true,
+	underline = true,
+	bold = true,
+	italic = {
+		strings = true,
+		emphasis = true,
+		comments = true,
+		operators = false,
+		folds = true,
+	},
+	strikethrough = true,
+	invert_selection = false,
+	invert_signs = false,
+	invert_tabline = false,
+	invert_intend_guides = false,
+	inverse = true, -- invert background for search, diffs, statuslines and errors
+	contrast = "", -- can be "hard", "soft" or empty string
+	palette_overrides = {},
+	overrides = {},
+	dim_inactive = false,
+	transparent_mode = false,
+})
+vim.cmd("colorscheme gruvbox")
